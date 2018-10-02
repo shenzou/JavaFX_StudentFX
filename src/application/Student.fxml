@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.String?>
+<?import javafx.collections.FXCollections?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ListView?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="1000.0" prefWidth="1000.0" xmlns="http://javafx.com/javafx/10.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.StudentController">
+   <children>
+      <Label fx:id="commentslabel" layoutX="337.0" layoutY="285.0" text="Comments" />
+      <Label fx:id="marklabel" layoutX="336.0" layoutY="228.0" text="Mark" />
+      <Label fx:id="LstSt" layoutX="30.0" layoutY="28.0" text="List of students">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Label>
+      <Label fx:id="photolabel" layoutX="512.0" layoutY="62.0" text="Photo" />
+      <Label fx:id="genderlabel" layoutX="331.0" layoutY="123.0" text="Gender" />
+      <Label fx:id="datelabel" layoutX="330.0" layoutY="183.0" text="Date of birth" />
+      <Label fx:id="labelname" layoutX="334.0" layoutY="70.0" text="Name" />
+      <ListView fx:id="Lst" layoutX="30.0" layoutY="70.0" prefHeight="200.0" prefWidth="200.0" />
+      <TextField fx:id="txtname" layoutX="328.0" layoutY="87.0" prefHeight="25.0" prefWidth="118.0" />
+      <TextField fx:id="marktext" layoutX="328.0" layoutY="245.0" prefHeight="25.0" prefWidth="118.0" />
+      <ComboBox fx:id="gendercombo" layoutX="327.0" layoutY="147.0" prefWidth="150.0">
+      	<items>
+      		<FXCollections fx:factory="observableArrayList">
+      			<String fx:value="Male" />
+      			<String fx:value="female" />
+      		</FXCollections>
+      	</items>
+      </ComboBox>
+      <DatePicker fx:id="dateDate" layoutX="328.0" layoutY="200.0" prefHeight="25.0" prefWidth="118.0" />
+      <TextArea fx:id="commentsArea" layoutX="327.0" layoutY="309.0" prefHeight="78.0" prefWidth="290.0" />
+      <ImageView fx:id="photoPhoto" fitHeight="88.0" fitWidth="81.0" layoutX="503.0" layoutY="88.0" pickOnBounds="true" preserveRatio="true" />
+      <Label fx:id="labelstudents" layoutX="334.0" layoutY="28.0" text="Student details">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Label>
+      <Button fx:id="modif" layoutX="416.0" layoutY="398.0" mnemonicParsing="false" text="Modifier" />
+      <Label fx:id="debug" layoutX="510.0" layoutY="262.0" text="Debug" />
+      <Button fx:id="plusbutton" layoutX="30.0" layoutY="273.0" mnemonicParsing="false" text="+" />
+      <Button fx:id="minusbutton" layoutX="66.0" layoutY="273.0" mnemonicParsing="false" text="-" />
+      <Button fx:id="reloadbutton" layoutX="97.0" layoutY="273.0" mnemonicParsing="false" text="Reload" />
+      <Button fx:id="ajoutButton" layoutX="323.0" layoutY="398.0" mnemonicParsing="false" text="Ajouter" />
+      <Label layoutX="510.0" layoutY="237.0" text="Sortie:" />
+   </children>
+</AnchorPane>
